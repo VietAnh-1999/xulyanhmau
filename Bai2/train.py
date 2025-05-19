@@ -14,7 +14,7 @@ model = YOLO("last.pt")
 
 # Bắt đầu huấn luyện
 model.train(
-    data= r"D:\12.python\HT\XLAMAU\data.yaml",
+    data= "data.yaml",
     epochs=50,
     imgsz=640,
     batch=16,
