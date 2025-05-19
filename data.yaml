@@ -1,0 +1,5 @@
+train: D:/12.python/HT/XLAMAU/dataset/train/images
+val: D:/12.python/HT/XLAMAU/dataset/val/images
+
+nc: 1
+names: ['TAINGHE']
