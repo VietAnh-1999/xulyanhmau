@@ -1,5 +1,5 @@
-train: D:/5.HT/HTVAXLA/dataset/train/images
-val: D:/5.HT/HTVAXLA/dataset/val/images
+train: D:/Xulyanhmau/Bai1/train/images
+val: D:/Xulyanhmau/Bai1/val/images
 
 nc: 2
 names: ['KhunN', 'TaiN']
