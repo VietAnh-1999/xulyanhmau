@@ -1,6 +1,7 @@
 # code_train
 
 import torch
+print(torch.cuda.is_available())
 from ultralytics import YOLO
 import wandb
 
@@ -15,9 +16,9 @@ model = YOLO("last.pt")
 # Bắt đầu huấn luyện
 model.train(
     data= "data.yaml",
-    epochs=50,
+    epochs=100,
     imgsz=640,
-    batch=16,
+    batch=20,
     project="my-yolo-project",
     name="yolov8n-custom"
 )

@@ -11,7 +11,7 @@ img = cv2.VideoCapture(0)
 model = YOLO("best.pt")
 
 # Ngưỡng chấp nhận (confidence threshold)
-acceptance_threshold = 0.9
+acceptance_threshold = 0.8
 
 last_time_detect = 0
 image_detect_display = None
@@ -79,4 +79,4 @@ while True:
         break
 
 img.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() 
