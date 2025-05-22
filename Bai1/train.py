@@ -9,9 +9,9 @@ import wandb
 #wandb.login(key="38f8ad7ec777cb01a116465827f9f72f7207f22")
 
 # Tải mô hình YOLOv8n (lightweight)
-model = YOLO("yolov8s.pt")
+#model = YOLO("yolov8s.pt")
 # Nếu muốn tiếp tục huấn luyện từ lần huấn luyện trước:
-#model = YOLO("last.pt")
+model = YOLO("last.pt")
 
 # Bắt đầu huấn luyện
 model.train(
