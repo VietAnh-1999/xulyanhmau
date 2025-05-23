@@ -11,7 +11,7 @@ img = cv2.VideoCapture(0)
 model = YOLO("best.pt")
 
 # Ngưỡng chấp nhận (confidence threshold)
-acceptance_threshold = 0.8
+acceptance_threshold = 0.6
 
 last_time_detect = 0
 image_detect_display = None
@@ -46,6 +46,7 @@ def detect(image_detect, detect_id):
                 #cv2.imwrite(name_file,image_detect)
                 image_detect_display = image_detect
                 detect_count += 1
+                #img_detect = 
 
         
 
@@ -75,7 +76,8 @@ while True:
     if image_detect_display is not None:
         cv2.imshow("Detection", image_detect_display)
     
-    if cv2.waitKey(1) == ord('q'):
+    #if cv2.waitKey(1) == ord('q'):
+    if cv2.waitKey(1) == 27:
         break
 
 img.release()
