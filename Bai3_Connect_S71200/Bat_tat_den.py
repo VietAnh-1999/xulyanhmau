@@ -2,7 +2,8 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel
 from PyQt5.QtCore import QTimer
 import snap7
-#branch battatden Ui112233465646646
+#branch main
+
 
 class PLCControlApp(QWidget):
     def __init__(self):
